@@ -36,7 +36,7 @@ logger.info('\n' + dataset.head().to_string())
 Y = np.array(dataset['species'])
 X = np.array(dataset[['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
 
-X_train, X_valid, Y_train, Y_valid = train_test_split(X, Y, test_siz=0.3, random_state=0)
+X_train, X_valid, Y_train, Y_valid = train_test_split(X, Y, test_size=0.3, random_state=0)
 
 # 学習
 svm_model = SVC()
