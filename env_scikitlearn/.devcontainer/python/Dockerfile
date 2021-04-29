@@ -8,7 +8,7 @@ LABEL description="env_scikitlearn"
 # パッケージのインストール
 RUN apt-get update && apt-get install -y \
 tzdata \
-&& rm -rf /var//lib/apt/lists/*
+&& rm -rf /var/lib/apt/lists/*
 
 # モジュールのインストール
 WORKDIR /tmp/work
