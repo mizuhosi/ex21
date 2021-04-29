@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import datetime
+import schedule
 import time
 import os.path
 
@@ -23,7 +24,7 @@ def getnews():
     fn = f'./out/{datetime.datetime.now().strftime("%Y%m%d-%H%M%S")}.txt'
 
     # ニュースのタイトルを出力する
-    with open(fn, mode'w') as f:
+    with open(fn, mode='w') as f:
         for e in elems:
             f.write(e.getText() + '\n')
 
