@@ -1,0 +1,12 @@
+{
+    "name": "Sklearn Python",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service": "python",
+    "workspaceFolder": "/home/shin1008/dev",
+    "extensions": [
+        "ms-python.python"
+    ],
+    "settings": {
+        "editor.tabSize": 2,
+    },
+}
